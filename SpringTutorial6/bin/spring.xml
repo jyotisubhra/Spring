@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="triangle" class="org.jyoti.javamaster.Triangle">
+	<property name="points">
+		<list>
+			<ref bean = "zeroPoint"/>
+			<ref bean = "Point2"/>
+			<ref bean = "Point3"/>
+		</list>
+	</property>
+ </bean>
+<bean id = "zeroPoint" class = "org.jyoti.javamaster.Point">
+	<property name="x" value = "0"></property>
+	<property name="y" value = "0"></property>
+</bean>
+
+<bean id = "Point2" class = "org.jyoti.javamaster.Point">
+	<property name="x" value = "-20"></property>
+	<property name="y" value = "0"></property>
+</bean>
+
+<bean id = "Point3" class = "org.jyoti.javamaster.Point">
+	<property name="x" value = "0"></property>
+	<property name="y" value = "20"></property>
+</bean>
+
+</beans>
